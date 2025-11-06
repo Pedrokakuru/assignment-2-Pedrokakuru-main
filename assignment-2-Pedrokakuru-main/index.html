@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TRADE — Your Best Value Proposition</title>
+<link rel="stylesheet" href="style.css" />
+  <meta name="description" content="A simple landing page demonstrating semantic HTML and CSS." />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">◆</span>
+        <span class="site-name">TRADE</span>
+      </div>
+
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-outline" href="#cta">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Your Best Value Proposition</h1>
+        <p>Short, compelling sentence that explains what you offer and why it matters.</p>
+        <a class="btn" href="#cta">Get started</a>
+      </div>
+
+      <figure class="hero-media">
+        <!-- Add a real image to /assets and update the src below -->
+        <img src="images/tony.jpg" alt="Screenshot or product photo" />
+        <figcaption class="sr-only">Hero illustration</figcaption>
+      </figure>
+    </section>
+
+    <!-- Section 1: Features / Important data -->
+    <section class="section container" id="features" aria-labelledby="features-title">
+      <div class="section-head">
+        <h2 id="features-title">Feature set that is amazing</h2>
+        <p>Brief description highlighting benefits. Use bullets to keep it scannable.</p>
+      </div>
+
+      <div class="grid-2">
+        <ul class="checklist">
+          <li>Benefit of Feature One</li>
+          <li>Benefit of Feature Two</li>
+          <li>Benefit of Feature Three</li>
+        </ul>
+
+        <div class="card">
+          <h3>Important data</h3>
+          <p>Put a short table, KPI, or screenshot here.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Testimonials -->
+    <section class="section container" id="testimonials" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title">What customers say</h2>
+      <div class="grid-3">
+        <blockquote class="quote">
+          <p>“This changed how we work.”</p>
+          <footer>— Alex J.</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Simple, fast, and effective.”</p>
+          <footer>— Priya R.</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Five stars. Highly recommend.”</p>
+          <footer>— Mateo L.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Section 3: Pricing / FAQ -->
+    <section class="section container" id="pricing" aria-labelledby="pricing-title">
+      <h2 id="pricing-title">Pricing</h2>
+      <div class="grid-3">
+        <div class="card plan">
+          <h3>Starter</h3>
+          <p class="price">$9<span>/mo</span></p>
+          <ul>
+            <li>1 project</li>
+            <li>Email support</li>
+            <li>Basic analytics</li>
+          </ul>
+          <a class="btn btn-ghost" href="#cta">Choose Starter</a>
+        </div>
+        <div class="card plan plan-featured" aria-label="Most popular plan">
+          <h3>Pro</h3>
+          <p class="price">$29<span>/mo</span></p>
+          <ul>
+            <li>Unlimited projects</li>
+            <li>Priority support</li>
+            <li>Advanced analytics</li>
+          </ul>
+          <a class="btn" href="#cta">Choose Pro</a>
+        </div>
+        <div class="card plan">
+          <h3>Team</h3>
+          <p class="price">$99<span>/mo</span></p>
+          <ul>
+            <li>Up to 10 users</li>
+            <li>SSO & roles</li>
+            <li>Team reporting</li>
+          </ul>
+          <a class="btn btn-ghost" href="#cta">Choose Team</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="cta" aria-labelledby="cta-title">
+      <div class="container cta-inner">
+        <h2 id="cta-title">Ready to get started?</h2>
+        <p>Sign up for updates or request a quote.</p>
+        <form class="cta-form" action="#" method="post">
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" type="email" name="email" placeholder="you@example.com" required />
+          <button class="btn" type="submit">Notify me</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">◆</span>
+        <span class="site-name">TRADE</span>
+      </div>
+
+      <nav aria-label="Footer">
+        <ul class="nav">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+
+      <small>© <span id="year"></span> TRADE. All rights reserved.</small>
+    </div>
+    <script>
+      // auto-year for copyright
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
